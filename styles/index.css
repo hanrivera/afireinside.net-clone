@@ -1,0 +1,255 @@
+*{
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    background-image: url("../media/bodies-pattern-sq.jpg");
+}
+
+main{
+    width: 1200px;
+    margin: 5rem auto 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+a:active{
+    cursor: wait;
+}
+
+.colorBar img{
+    max-width: 100%;
+}
+
+/* nav */
+nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(26, 26, 26, 1);
+}
+
+nav div{
+    width: 1200px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a{
+    padding: .5rem .525rem;
+    margin: 0 1rem;
+    border-bottom: .25rem solid transparent;
+}
+
+nav a:hover{
+    border-bottom: .25rem solid #fafafa;
+}
+
+/* new album, music embed */
+
+section, .newAlbumMusicEmbedRow, footer{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newAlbumMusicEmbedRow{
+    width: 50%;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newAlbumMusicEmbedRow a{
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+}
+
+.newAlbumMusicEmbedRow a:hover{
+    color: #1a1a1a;
+    background-color: #fafafa;
+}
+
+/* shop */
+
+.shop{
+    margin: .25rem 0;
+    padding: 3rem 6rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: #fafafa;
+}
+
+.shop a{
+    color: #1a1a1a
+}
+
+.shop a:hover{
+    border: 2px solid #1a1a1a;
+}
+
+.shop a:first-child{
+    margin-bottom: 1.5rem;
+    padding: 3rem 0;
+    border: none;
+}
+
+.shopItem{
+    width: 30%;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5rem 1rem;
+    padding: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.shopPage{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #1a1a1a;
+}
+
+.shopPage:hover{
+    font-weight: bold;
+}
+
+.tourDates{
+    height: 40rem;
+    margin: .25rem 0;
+    padding-top: 1.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../media/tour-background.jpg");
+    background-size: cover;
+}
+
+.tourDates div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 5rem;
+    width: 100%;
+    padding: 0 2rem 1rem;
+    border-bottom: .125rem solid gray;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0), rgba(26, 26, 26, 1));
+}
+
+.tourDates a{
+    border: .125rem solid transparent;
+    padding-bottom: .125rem;
+}
+
+.tourDates a:hover{
+    border-bottom: .125rem solid #ed3b31;
+}
+
+.tourDates p{
+    margin: 10rem 0 1rem;
+}
+
+.tourDates button{
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    color: #fafafa;
+    font-size: 1.25rem;
+    background-color: #ed3b31;
+}
+
+.tourDates button:hover{
+    color: #ed3b31;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+footer{
+    padding: 2rem 0;
+    flex-direction: column;
+}
+
+footer form, .socialLinks{
+    margin-bottom: 1rem;
+}
+
+footer label{
+    display: block;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+footer input{
+    height: 2.5rem;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+footer input[type=text]{
+    width: 16rem;
+    padding: 0 .5rem 0 1rem;
+    border-radius: .5rem 0 0 .5rem;
+    color: #1a1a1a;
+    margin-right: -.25rem;
+    border-right: .125rem solid #1a1a1a;
+}
+
+footer input[type=button]{
+    width: 4rem;
+    border-radius: 0 .5rem .5rem 0;
+    color: #1a1a1a;
+    margin-left: -.25rem;
+    border-left: .125rem solid #1a1a1a;
+}
+
+footer input[type=button]:hover{
+    color: #fafafa;
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer input[type=button]:active{
+    cursor: wait;
+}
+
+footer p:nth-of-type(1){
+    margin-bottom: .5rem;
+}
+
+.socialLinks a{
+    font-size: 1.25rem;
+    margin: 0 .5rem;
+}
+
+footer p:nth-of-type(2){
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+footer a:last-child:hover{
+    border-bottom: .125rem solid #fafafa;
+}
